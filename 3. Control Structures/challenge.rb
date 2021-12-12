@@ -6,7 +6,7 @@
 
 colors = ['+','+','*','~','~','*','+','+','*'];
 
-20.downto(1) do
+20.times do
     colors.push(colors.shift)
     puts colors.join
 end
