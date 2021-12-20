@@ -11,4 +11,9 @@ class Animal
     # def noise=(value)
     #     @noise = value
     # end
+
+    def initialize (options = {})
+        @noise = options[:noise] || "Grrr"
+        puts "New animal instantiated"
+    end
 end
